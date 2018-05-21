@@ -4,12 +4,17 @@ package com.example.dh2.comunicacionentrefragments;
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 // IMPLEMENTO EL NOTIFICADORAACTIVITIES QUE ES UNA CLASE INTERNA DE FRAGMENT1 PARA PODER ESTABLECER COMUNICACION ENTRE FRAGMENT Y ACTIVITY DE MANERA QUE EL FRAGMENT SEA REUTILIZABLE
 public class MainActivity extends AppCompatActivity implements Fragment1.NotificadorAActivities {
+
+    DrawerLayout drawerLayout;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
